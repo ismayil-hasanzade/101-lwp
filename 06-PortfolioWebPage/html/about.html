@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <title>Porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script>
+        jQuery(function($){
+            var $navbar = $('.header');
+            $(window).scroll(function(event){
+                var $current = $(this).scrollTop();
+                if($current > 0){
+                    $navbar.addClass('navbar-color');
+
+                } else{
+                    $navbar.removeClass('navbar-color');
+                }
+            })
+        })
+    </script>
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+        <div class="name">
+            Ismayil <span>Hasanzade</span>
+        </div>
+        <nav>
+            <ul>
+               <a href="../index.html">
+                <li>Home</li>
+               </a>
+               <a href="../html/about.html">
+                <li>About</li>
+               </a>
+               <a href="./project.html">
+                <li>Projects</li>
+               </a><a href="./contact.html">
+                <li>Contact</li>
+               </a>
+
+            </ul>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <main>
+       <section class="aboutme">
+            <h1>About Me</h1>
+            <div><p>Hello I m Ismayil Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis numquam architecto maxime iusto nam dignissimos commodi eaque consequatur alias necessitatibus blanditiis nobis atque deleniti, illum quo dolorem quod minus tempora molestias illo, omnis obcaecati adipisci consectetur. Dicta consequuntur voluptatem earum molestias voluptatibus voluptatum iusto sunt rem quia et! Laborum, fugit. <span>CODDING ADDICT</span></p></div>
+       </section>
+    </main>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <footer>
+        <div class="icon">
+           <a href=""> <i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <p>© 2023 Ismayil Hasanzade | All rights reserved.</p>
+    </footer>
+    <!-- FOOTER END -->
+    
+    
+</body>
+</html>

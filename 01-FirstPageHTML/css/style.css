@@ -1,0 +1,103 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #fc997c;
+    height: 50px;
+    
+}
+.logo{
+  
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-bottom:2px;
+    height: 80%;
+    width: 10%;
+
+}
+.logo p{
+    font-family: 'Tilt Warp', cursive;
+    color: whitesmoke;
+    font-size: 30px;
+}
+.links{
+    position: absolute;
+    margin: auto;
+    right: 0;
+    top: 0;
+    margin-right: 15%;
+    margin-top: 1%;
+}
+.links ul{
+
+    display: flex;
+    height: 80%;
+    width: 30px;
+    gap: 25px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+span{
+    margin-top: 60px;
+    display: block;
+    color: #3e4555;
+    font-size: 55px;
+    font-family: 'Tilt Warp', cursive;
+    text-align: center;    
+}
+#p{
+    margin-top: 40px;
+    text-align:center;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    color: #3e4555;
+}
+.content{
+    display: flex;
+    justify-content: center ;
+    margin-top: 70px;
+    height: 400px;
+    
+    gap: 20px;
+    
+}
+.a{
+   
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    height: 300px;
+    width: 350px;
+}
+img{
+    
+    display: block;
+    margin: auto;
+    width: 60px;
+    height: 50px;
+}
+
+.register{
+    margin-top: 20px;
+    font-family: 'Tilt Warp', cursive;
+    font-size: 0.7cm;
+    color: #0c0201;
+    
+
+}
+.lorem{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Warp', cursive;
+    color: #0c0201;
+}

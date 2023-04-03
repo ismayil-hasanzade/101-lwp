@@ -1,0 +1,25 @@
+footer{
+    .container{
+        max-width: 1127px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        p{
+            padding-top: 23px;
+            padding-bottom: 23px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            color: rgba(33, 33, 33, 0.75);
+
+        }
+        div{
+            display: flex;
+            gap: 36px;
+            color:#212121;
+           
+        }
+    }
+}
