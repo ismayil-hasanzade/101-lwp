@@ -1,0 +1,108 @@
+.heading{
+    .container{
+        display: flex;
+        max-width: 1340px;
+        margin:0 auto;
+        align-items: center;
+        justify-content: space-between;
+        padding-top:40px;
+        padding-bottom: 40px;
+        
+        .name{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            justify-content: flex-start;
+            h2{
+                font-size: 32px;
+                font-weight: 700;
+                color: #3563E9;
+                font-family:'Plus Jakarta Sans';
+                margin-right: 64px;
+            }
+            .search{
+                display: flex;
+                border: 1px solid #C3D4E966;
+                border-radius:70px ;
+                padding: 12px;
+                gap: 23px;
+                max-width: 492px;
+                width: 100%;
+
+                .img2{
+                    display: none;
+                }
+                
+                
+                input{
+                    // width: 492px;
+                    display: flex;
+                    border: none;
+    
+                    width: 100%;               
+                    outline: none;
+
+                }
+            }
+        }
+        .profile{
+    
+            display: flex;
+            padding-right: 32px;
+            align-items: center;
+            .icons{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                margin-left: 10px;
+                div{
+                    max-width: 40px;
+                    min-width: 40px;
+                }
+            }
+            .profile_photo{
+                max-height:44px;
+                max-width: 44px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+    
+    }
+}
+@media only screen and (max-width: 740px) {
+    .heading{
+        .container{
+            align-items: start;
+            .name{
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                h2{
+                    margin-bottom: 20px;
+                }
+                .search{
+                    .img1{
+                        display: none;
+                    }
+                    .img2{
+                        display: block;
+                        
+                        
+                    }
+                }
+
+            }
+            .profile{
+                .icons{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}
