@@ -17,9 +17,10 @@ function RemoveElement(arr) {
   });
 }
 
-function replaceword(arry, new_arry) {
-  arry.splice(1, 0, new_arry);
-  return arry;
+function replaceword(ary, new_arry) {
+  new_arry.push(arr[1])
+  arr[1]= new_arry
+  return ary;
 }
 console.log("Arry:", arr);
 console.log("Task1", func(arr));
