@@ -115,8 +115,15 @@ html {
   display: flex;
 }
 .container .container_content .card .white .sizes span {
+  color: black;
   font-size: 1.3rem;
   margin-right: 2.5rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 10px;
 }
 .container .container_content .card .white h4 {
   font-size: 1.2rem;
