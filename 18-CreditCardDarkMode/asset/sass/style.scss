@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+section {
+  display: grid;
+  place-items: center;
+  background-color: rgba(221, 219, 219, 0.5);
+
+  .container {
+    transition: 2s;
+    .btn {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(238 232 225);
+      display: grid;
+      place-items: center;
+      position: absolute;
+      top: 100px;
+      right: 70px;
+      font-size: 30px;
+    }
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+    .container_content {
+      transition: 2s;
+      width: 450px;
+      background-repeat: no-repeat;
+      background-color: whitesmoke;
+
+      border-radius: 10px;
+      box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      position: relative;
+      ::before {
+        content: "";
+        background-image: url("../imgs/pngwing.com\ \(10\).png");
+        background-size: cover;
+        position: absolute;
+        background-size: 80% 70%;
+        background-position: 40px 10px;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 8%;
+      }
+      .container_content_header {
+        font-size: 26px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+      }
+      .container_content_chip {
+        img {
+          max-width: 40px;
+          border-radius: 10px;
+          border: 1px solid black;
+          margin-bottom: 15px;
+        }
+      }
+      .container_content_number {
+        margin-bottom: 5px;
+        font-weight: 600;
+        color: rgb(28, 28, 28);
+      }
+      p {
+        font-size: 15px;
+        color: rgb(28, 28, 28);
+        margin-bottom: 5px;
+      }
+      span {
+        color: rgb(28, 28, 28);
+        margin-bottom: 5px;
+      }
+      .mscard {
+        width: 100px;
+        position: absolute;
+        right: 20px;
+        bottom: 1px;
+      }
+    }
+  }
+
+  .container.change {
+    background-color: rgb(38 38 38);
+    .container_content {
+      background-color: rgb(53 53 53);
+      color: white;
+      transform: perspective(500px) rotatey(360deg) rotateX(20deg);
+
+      .container_content_number,
+      p,
+      span {
+        color: white;
+      }
+    }
+    .btn {
+      color: white;
+      background-color: rgb(70 70 70);
+      i {
+        display: none;
+      }
+      .moon {
+        display: block !important;
+      }
+    }
+  }
+}
