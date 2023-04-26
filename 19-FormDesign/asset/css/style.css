@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+section .container {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+section .container .content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+section .container .content .content_header {
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+section .container .content p {
+  margin-bottom: 15px;
+}
+section .container .content .twitter_box {
+  background-color: #41afec;
+}
+section .container .content .facebook_box {
+  background-color: #3f5e9e;
+}
+section .container .content .box {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  gap: 15px;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 6px;
+}
+section .container .content .or_class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px 30px 0px;
+  width: 80%;
+  position: relative;
+}
+section .container .content .or_class hr {
+  width: 100%;
+}
+section .container .content .or_class span {
+  padding: 0px 10px 0px 10px;
+  position: absolute;
+  top: -30px;
+  font-size: 18px;
+  background-color: white;
+}
+section .container .content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .container .content form input[type=button] {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: rgb(17, 123, 255);
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+section .container .content form div {
+  width: 80%;
+  display: flex;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid rgb(190, 190, 190);
+}
+section .container .content form div .sort {
+  background-color: white;
+  font-size: 15px;
+}
+section .container .content form div select {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+section .container .content form div input {
+  outline: none;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-left: 10px;
+  display: flex;
+  font-size: 20px;
+}
+section .container .content form div .number {
+  width: 65%;
+}
+section .container .content form div i {
+  padding: 10px;
+  background-color: #ebecee;
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+section .container .content span {
+  margin-top: 20px;
+  font-weight: 400;
+}
+section .container .content span a {
+  text-decoration: none;
+  color: #41afec;
+}/*# sourceMappingURL=style.css.map */
