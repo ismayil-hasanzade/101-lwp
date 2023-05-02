@@ -4,8 +4,6 @@
 // fetch("https://restcountries.com/v3.1/name/azerbaijan")
 //   .then((res) => res.json())
 //   .then((data) => {
-//     console.log(data[0].currencies[0]);
-
 //     btn.addEventListener("click", () => {
 //       let container = document.createElement("div");
 //       container.setAttribute("class", "container");
@@ -46,7 +44,7 @@
 //       let population_property = document.createElement("p");
 //       let capital_property = document.createElement("p");
 //       let number_property = document.createElement("p");
-//       currencies_property.innerHTML = data[0].currencies.AZN.name;
+//       currencies_property.innerHTML = Object.keys(data[0].currencies)[0];
 //       car_series_property.innerHTML = data[0].cioc;
 //       population_property.innerHTML = data[0].population;
 //       capital_property.innerHTML = data[0].capital;
@@ -85,7 +83,7 @@ const createElements = (data) => {
         <p>Number</p>
       </div>
       <div class="list_property">
-        <p>${data[0].currencies}</p>
+        <p>${Object.keys(data[0].currencies)[0]}</p>
         <p>${data[0].cioc}</p>
         <p>${data[0].population}</p>
         <p>${data[0].capital}</p>
