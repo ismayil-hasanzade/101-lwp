@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container_input {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container_input .input_button {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.container {
+  width: 30%;
+  overflow: hidden;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  border: 8px solid blue;
+}
+.container .container_header {
+  background-color: gold;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 13px;
+  border-top-left-radius: 13px;
+  height: 30px;
+}
+.container .img {
+  width: 100%;
+  height: 200px;
+}
+.container .img img {
+  width: 100%;
+  height: 100%;
+}
+.container .name {
+  background-color: gold;
+  width: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  padding: 20px 0px 20px 0px;
+}
+.container .list {
+  display: flex;
+  color: white;
+}
+.container .list .list_name {
+  width: 100%;
+}
+.container .list .list_name p {
+  text-align: center;
+  background-color: rgb(57, 57, 255);
+  margin-bottom: 3px;
+  margin-right: 1px;
+  padding: 3px;
+}
+.container .list .list_property {
+  width: 100%;
+}
+.container .list .list_property p {
+  text-align: center;
+  margin-bottom: 3px;
+  background-color: rgb(53, 143, 143);
+  height: min-content;
+  padding: 3px;
+}/*# sourceMappingURL=style.css.map */
