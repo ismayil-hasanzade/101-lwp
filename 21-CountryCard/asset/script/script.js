@@ -85,7 +85,7 @@ const createElements = (data) => {
         <p>Number</p>
       </div>
       <div class="list_property">
-        <p>${data[0].currencies}</p>
+        <p>${Object.keys(data[0].currencies)[0]}</p>
         <p>${data[0].cioc}</p>
         <p>${data[0].population}</p>
         <p>${data[0].capital}</p>
