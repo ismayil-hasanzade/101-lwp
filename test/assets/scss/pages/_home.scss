@@ -1,0 +1,113 @@
+// main{
+//     display: flex;
+//     justify-content: center;
+//     flex-direction: column;
+//     padding-top: 90px;
+//     background: #8A2387;  /* fallback for old browsers */
+//     background: -webkit-linear-gradient(to right, #F27121, #E94057, #8A2387);  /* Chrome 10-25, Safari 5.1-6 */
+//      background: linear-gradient(to right, #F27121, #E94057, #8A2387); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+//     div{
+//         display: flex;
+//         flex-direction: column;
+//         width: 90%;
+//         height: 90vh;
+//         justify-content: center;
+//         align-items: center;
+//         color: white;
+
+//         h1{
+//             font-size: 130px;
+            
+//             line-height: 90px;
+//         }
+//         h2{
+//             font-size: 80px;
+//             margin-bottom: 50px;
+            
+//         }
+//         .button{
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             color: white;
+//             background-color:rgb(238 9 121);
+//             font-size: 20px;
+//             height: 100px;
+//             width: 270px;
+//             border-radius: 60px;
+//             letter-spacing: 1px;
+//             font-weight: 600;
+//             border: none;
+        
+            
+//         }
+//     }
+
+   
+
+// }
+// section{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     flex-wrap: wrap;
+//     max-height: min-content;
+//     width: 100%;
+//     padding: 60px;
+//     div{
+        
+//         background-color: white;
+//         width: 200px;
+//         height: 200px;
+        
+        
+    
+//     }
+//     .text{
+//         display: flex;
+//         flex-direction: column;
+//         width: 546px;
+//         height:374.38px;
+//         padding-top: 50px;
+    
+//         h3{
+//             font-size: 3.5rem;
+//             line-height: 54px;
+//             font-weight: 300;
+//             margin-bottom: 20px;
+//         }
+//         p{
+//             font-size: 20px;
+//             letter-spacing: 1px;
+//             line-height: 30px;
+//         }
+//     }
+//     .image{
+//         height: 498px;
+//         width: 498px;
+//         border-radius: 50%;
+//         border: none;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         border-radius: 50%;
+//         img{
+//             height: 100%;
+//             width: 100%;
+//             border-radius: 50%;
+//         }
+//     }
+    
+
+// }
+// @media only screen and (max-width: 900px){
+//     section{
+//         flex-direction: column-reverse;
+//         .second{
+//             flex-direction: column-reverse;
+//         }
+//     }
+
+// }
