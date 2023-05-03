@@ -141,7 +141,7 @@ border.addEventListener("click", () => {
       data.forEach((x) => {
         if (x.borders && x.borders.length > 0) {
           x.borders.forEach((element) => {
-            fetch(`https://restcountries.com/v3.1/name/${element}`)
+            fetch(`https://restcountries.com/v3.1/alpha/${element}`)
               .then((res) => res.json())
               .then((data) => {
                 let container = document.createElement("div");
