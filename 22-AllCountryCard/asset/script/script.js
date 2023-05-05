@@ -73,6 +73,7 @@ all.addEventListener("click", () => {
     .then((res) => res.json())
     .then((data) => {
       data.forEach((element) => {
+        console.log(element, element.name.common);
         let container = document.createElement("div");
         container.setAttribute("class", "container");
         let container_header = document.createElement("div");
@@ -112,11 +113,17 @@ all.addEventListener("click", () => {
         let population_property = document.createElement("p");
         let capital_property = document.createElement("p");
         let number_property = document.createElement("p");
-        currencies_property.innerHTML = Object.keys(element.currencies)[0];
+        if (element.currencies) {
+          currencies_property.innerHTML = Object.keys(element.currencies)[0];
+        }
         car_series_property.innerHTML = element.cioc;
         population_property.innerHTML = element.population;
         capital_property.innerHTML = element.capital;
-        number_property.innerHTML = element.idd.root + element.idd.suffixes[0];
+        if (element.idd.root) {
+          number_property.innerHTML =
+            element.idd.root + element.idd.suffixes[0];
+        } 
+
         list_property.append(currencies_property);
         list_property.append(car_series_property);
         list_property.append(population_property);
@@ -141,9 +148,10 @@ border.addEventListener("click", () => {
       data.forEach((x) => {
         if (x.borders && x.borders.length > 0) {
           x.borders.forEach((element) => {
-            fetch(`https://restcountries.com/v3.1/name/${element}`)
+            fetch(`https://restcountries.com/v3.1/alpha/${element}`)
               .then((res) => res.json())
               .then((data) => {
+                console.log(data[0].region);
                 let container = document.createElement("div");
                 container.setAttribute("class", "container");
                 let container_header = document.createElement("div");
