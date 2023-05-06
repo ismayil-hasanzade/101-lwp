@@ -1,0 +1,205 @@
+main {
+  .modern_studio {
+    background-image: url("../../../assets/imgs/background.png");
+    padding-top: 50px;
+    padding-bottom: 56px;
+    .container {
+      height: auto;
+      .modern_studio_container_content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .modern_studio_name {
+          color: white;
+
+          width: 50%;
+
+          img {
+            box-sizing: border-box;
+
+            width: 148px;
+            height: 148px;
+            left: 413px;
+            top: 5px;
+          }
+          p {
+            color: #ef6d58;
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+          }
+          h1 {
+            max-width: 513px;
+            width: 100%;
+            font-weight: 800;
+            font-size: 72px;
+
+            letter-spacing: -2px;
+            line-height: 80px;
+          }
+          .agency {
+            color: rgba(255, 255, 255, 0.64);
+            font-size: 16px;
+            line-height: 32px;
+            font-weight: 400;
+            max-width: 470px;
+            width: 100%;
+            margin-bottom: 34px;
+          }
+          .modern_studio_button {
+            display: flex;
+
+            .work {
+              background-color: #ef6d58;
+              color: white;
+              padding: 18px 23px;
+              border-radius: 6px;
+              border: none;
+            }
+            .contactus {
+              color: white;
+              background-color: initial;
+              padding: 18px 23px;
+              border-radius: 6px;
+              border: none;
+            }
+          }
+          .metainch {
+            margin-top: 44px;
+            display: flex;
+
+            .metainch_img {
+              width: 48px;
+              height: 48px;
+              background-color: #b550f6;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 16px;
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .metainchtext {
+              p {
+                color: rgba(255, 255, 255, 0.64);
+                max-height: 64px;
+              }
+            }
+          }
+        }
+        .modern_studio_img {
+          width: 50%;
+          img {
+            max-width: 570px;
+            max-height: 602px;
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  .brends {
+    width: 100%;
+    background-color: rgba(253, 240, 233, 1);
+    .container {
+      
+      .brends_container_content {
+        max-width: 1440px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 100px;
+          width: 100%;
+        }
+        border-bottom: 1px solid #F3D1BF;;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        max-width: 1170px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  .experience{
+    .container{
+      .container_content{
+        
+        .experience_image{
+          display: flex;
+          flex-direction: column;
+          max-width: 566px;
+          max-height: 585px;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+          div{
+            background-color:#EF6D58;
+            max-width: 219px;
+            max-height: 219px;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            img{
+              width: 100%;
+              height: 100%;
+              
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    .modern_studio {
+      .container {
+        .modern_studio_container_content {
+          flex-direction: column-reverse;
+          align-items: center;
+
+          .modern_studio_img {
+            width: 100%;
+          }
+          .modern_studio_name {
+            width: 100%;
+            p {
+              font-size: 16px;
+            }
+            h1 {
+              font-size: 56px;
+            }
+          }
+        }
+      }
+    }
+    .brends {
+      .container {
+        .brends_container_content {
+          flex-wrap: wrap;
+          gap: 15px;
+          align-items: center;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+* {
+  font-family: "Epilogue";
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  background-image: url("../../../assets/imgs/background.png");
+  padding-top: 16px;
+}
+header .container {
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+  flex-direction: column;
+  min-height: 60px;
+  overflow: hidden;
+  color: #ffffff;
+  padding-right: 23px;
+  padding-left: 23px;
+  transition: 500ms;
+  padding-bottom: 10px;
+}
+header .container .hidden_navigation {
+  color: white;
+  margin-top: 20px;
+}
+header .container .hidden_navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+header .container .container_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+header .container .container_content .navigation {
+  display: flex;
+  max-width: 515px;
+  width: 100%;
+}
+header .container .container_content .navigation ul {
+  display: flex;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: space-around;
+  width: 100%;
+}
+header .container .container_content .contact {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.295743);
+  padding: 18px 35.54px 16px 34.46px;
+  border-radius: 6px;
+  display: flex;
+}
+header .hidden_navigation {
+  color: white;
+  margin-top: 20px;
+}
+header .hidden_navigation ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1170px;
+  flex-direction: column;
+  min-height: 60px;
+  overflow: hidden;
+  color: #ffffff;
+  padding-right: 23px;
+  padding-left: 23px;
+  transition: 500ms;
+}
+
+.container.change {
+  height: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .container .container_content .navigation {
+    display: none;
+  }
+  header .container .container_content .contact {
+    display: none;
+  }
+  header .container .container_content .contact_button {
+    display: block !important;
+  }
+}
+main .modern_studio {
+  background-image: url("../../../assets/imgs/background.png");
+  padding-top: 50px;
+  padding-bottom: 56px;
+}
+main .modern_studio .container {
+  height: auto;
+}
+main .modern_studio .container .modern_studio_container_content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name {
+  color: white;
+  width: 50%;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name img {
+  box-sizing: border-box;
+  width: 148px;
+  height: 148px;
+  left: 413px;
+  top: 5px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name p {
+  color: #ef6d58;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name h1 {
+  max-width: 513px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 72px;
+  letter-spacing: -2px;
+  line-height: 80px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .agency {
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 400;
+  max-width: 470px;
+  width: 100%;
+  margin-bottom: 34px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .modern_studio_button {
+  display: flex;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .modern_studio_button .work {
+  background-color: #ef6d58;
+  color: white;
+  padding: 18px 23px;
+  border-radius: 6px;
+  border: none;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .modern_studio_button .contactus {
+  color: white;
+  background-color: initial;
+  padding: 18px 23px;
+  border-radius: 6px;
+  border: none;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .metainch {
+  margin-top: 44px;
+  display: flex;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .metainch .metainch_img {
+  width: 48px;
+  height: 48px;
+  background-color: #b550f6;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 16px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .metainch .metainch_img img {
+  width: 100%;
+  height: 100%;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_name .metainch .metainchtext p {
+  color: rgba(255, 255, 255, 0.64);
+  max-height: 64px;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_img {
+  width: 50%;
+}
+main .modern_studio .container .modern_studio_container_content .modern_studio_img img {
+  max-width: 570px;
+  max-height: 602px;
+  width: 100%;
+  height: 100%;
+}
+main .brends {
+  width: 100%;
+  background-color: rgb(253, 240, 233);
+}
+main .brends .container .brends_container_content {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #F3D1BF;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main .brends .container .brends_container_content img {
+  max-width: 100px;
+  width: 100%;
+}
+main .experience .container .container_content .experience_image {
+  display: flex;
+  flex-direction: column;
+  max-width: 566px;
+  max-height: 585px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .experience .container .container_content .experience_image img {
+  width: 100%;
+  height: 100%;
+}
+main .experience .container .container_content .experience_image div {
+  background-color: #EF6D58;
+  max-width: 219px;
+  max-height: 219px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+main .experience .container .container_content .experience_image div img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  main .modern_studio .container .modern_studio_container_content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .modern_studio .container .modern_studio_container_content .modern_studio_img {
+    width: 100%;
+  }
+  main .modern_studio .container .modern_studio_container_content .modern_studio_name {
+    width: 100%;
+  }
+  main .modern_studio .container .modern_studio_container_content .modern_studio_name p {
+    font-size: 16px;
+  }
+  main .modern_studio .container .modern_studio_container_content .modern_studio_name h1 {
+    font-size: 56px;
+  }
+  main .brends .container .brends_container_content {
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-around;
+  }
+}/*# sourceMappingURL=main.css.map */
