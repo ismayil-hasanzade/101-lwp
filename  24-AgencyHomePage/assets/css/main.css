@@ -86,7 +86,6 @@ header .hidden_navigation ul {
   flex-direction: column;
   min-height: 60px;
   overflow: hidden;
-  color: #ffffff;
   padding-right: 23px;
   padding-left: 23px;
   transition: 500ms;
@@ -211,7 +210,7 @@ main .brends .container .brends_container_content {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid #F3D1BF;
+  border-bottom: 1px solid #f3d1bf;
   padding-top: 50px;
   padding-bottom: 50px;
   max-width: 1170px;
@@ -223,36 +222,540 @@ main .brends .container .brends_container_content img {
   max-width: 100px;
   width: 100%;
 }
+main .experience {
+  background-color: rgb(253, 240, 233);
+  padding-top: 116px;
+}
+main .experience .container .container_content {
+  display: flex;
+  justify-content: space-around;
+}
 main .experience .container .container_content .experience_image {
   display: flex;
   flex-direction: column;
-  max-width: 566px;
-  max-height: 585px;
-  width: 100%;
-  height: 100%;
+  width: 45%;
   position: relative;
 }
 main .experience .container .container_content .experience_image img {
   width: 100%;
   height: 100%;
 }
-main .experience .container .container_content .experience_image div {
-  background-color: #EF6D58;
-  max-width: 219px;
-  max-height: 219px;
+main .experience .container .container_content .experience_about {
+  color: black;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+main .experience .container .container_content .experience_about h5 {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main .experience .container .container_content .experience_about h2 {
+  font-size: 56px;
+  max-width: 422px;
+  width: 100%;
+  font-weight: 800;
+  color: #391400;
+  margin-bottom: 26px;
+}
+main .experience .container .container_content .experience_about span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 18px;
+}
+main .experience .container .container_content .experience_about h3 {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 34px;
+}
+main .experience .container .container_content .experience_about button {
+  background: #ffffff;
+  width: 138px;
+  height: 48px;
+  border: none;
+  box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+  border-radius: 6px;
+}
+main .percent {
+  background-color: rgb(253, 240, 233);
+  padding-top: 161px;
+}
+main .percent .container .percent_content {
+  display: flex;
+  justify-content: space-between;
+}
+main .percent .container .percent_content .box {
+  border: 1px solid #f3d1bf;
+  max-width: 391px;
+  max-height: 676px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 45px;
+  padding-left: 48px;
+  padding-bottom: 38px;
+}
+main .percent .container .percent_content .box p {
+  color: #391400;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+main .percent .container .percent_content .box span {
+  margin-top: 13px;
+  height: 32px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+}
+main .making_projects {
+  background-color: rgb(253, 240, 233);
+}
+main .making_projects .container .container_content {
+  border-bottom: 1px solid #f3d1bf;
+  padding-bottom: 108px;
+  padding-top: 140px;
+  display: flex;
+  justify-content: space-between;
+}
+main .making_projects .container .container_content div {
+  width: 50%;
+}
+main .making_projects .container .container_content .leftbox p {
+  max-width: 150px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 17px;
+}
+main .making_projects .container .container_content .leftbox h2 {
+  max-width: 448px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+  margin-bottom: 31px;
+}
+main .making_projects .container .container_content .leftbox span {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 28px;
+}
+main .making_projects .container .container_content .leftbox h5 {
+  max-width: 84px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+}
+main .making_projects .container .container_content .rightbox {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+}
+main .making_projects .container .container_content .rightbox div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+main .making_projects .container .container_content .rightbox div h1 {
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 80px;
+  letter-spacing: -2px;
+  color: #391400;
+  margin-right: 66px;
+}
+main .making_projects .container .container_content .rightbox div p {
+  max-width: 422px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #391400;
+}
+main .videorell {
+  background-color: rgb(253, 240, 233);
+  padding-top: 127px;
+  padding-bottom: 81px;
+}
+main .videorell .container .container_content {
+  display: flex;
+  justify-content: space-between;
+}
+main .videorell .container .container_content div {
+  width: 45%;
+}
+main .videorell .container .container_content .videobox {
+  background-color: red;
+  max-width: 570px;
+  height: 368px;
+  position: relative;
+}
+main .videorell .container .container_content .videobox img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+main .videorell .container .container_content .videobox .playpng {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 148px;
+  height: 148px;
+}
+main .videorell .container .container_content .videobox .timepng {
+  bottom: 0;
+  position: absolute;
+  width: 47px;
+  height: 34px;
+}
+main .videorell .container .container_content .textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .videorell .container .container_content .textbox p {
+  max-width: 118px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 17px;
+}
+main .videorell .container .container_content .textbox span {
+  max-width: 469px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+  margin-bottom: 28px;
+}
+main .videorell .container .container_content .textbox h3 {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .sitelook {
+  background-color: rgb(253, 240, 233);
+  padding-top: 70px;
+}
+main .sitelook .container .container_content {
+  display: flex;
+  justify-content: space-between;
+}
+main .sitelook .container .container_content div {
+  width: 50%;
+}
+main .sitelook .container .container_content .textbox p {
+  max-width: 93px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 20px;
+}
+main .sitelook .container .container_content .textbox h2 {
+  max-width: 397px;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #391400;
+  margin-bottom: 26px;
+}
+main .sitelook .container .container_content .textbox h3 {
+  max-width: 470px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 26px;
+}
+main .sitelook .container .container_content .textbox div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+main .sitelook .container .container_content .textbox div img {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+}
+main .sitelook .container .container_content .textbox div span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .sitelook .container .container_content .imgbox {
+  max-width: 529px;
+  max-height: 551px;
+}
+main .sitelook .container .container_content .imgbox img {
+  width: 100%;
+  height: 100%;
+}
+main .longrun {
+  background-color: rgb(253, 240, 233);
+  padding-top: 203px;
+  padding-bottom: 213px;
+}
+main .longrun .container .container_content {
+  display: flex;
+}
+main .longrun .container .container_content .leftbox div:hover {
+  background-color: white;
+}
+main .longrun .container .container_content .leftbox div:hover .imgbox {
+  display: block;
+}
+main .longrun .container .container_content div {
+  width: 50%;
+}
+main .longrun .container .container_content .rightbox p {
+  max-width: 93px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 30px;
+}
+main .longrun .container .container_content .rightbox h2 {
+  max-width: 370px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 30px;
+}
+main .longrun .container .container_content .rightbox h4 {
+  max-width: 84px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+}
+main .longrun .container .container_content .leftbox {
+  display: flex;
+}
+main .longrun .container .container_content .leftbox div {
+  padding: 48px;
+  border: 1px solid #f3d1bf;
+  border-radius: 0px 6px 6px 0px;
+  transition: 300ms;
+  margin-right: 20px;
+}
+main .longrun .container .container_content .leftbox div .imgbox {
+  display: flex;
+  max-width: 80px;
+  max-height: 80px;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  position: absolute;
-  bottom: 0;
-  display: flex;
+  background-color: #ef6c57;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  display: none;
 }
-main .experience .container .container_content .experience_image div img {
+main .longrun .container .container_content .leftbox div h3 {
+  margin-top: 40px;
+  margin-bottom: 19px;
+  max-width: 154px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #391400;
+}
+main .longrun .container .container_content .leftbox div span {
+  max-width: 240px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 46px;
+}
+main .digitalproducts {
+  background-color: rgb(253, 240, 233);
+  padding-top: 116px;
+  padding-bottom: 141px;
+}
+main .digitalproducts .container .container_content {
+  display: flex;
+  justify-content: space-around;
+}
+main .digitalproducts .container .container_content .product_image {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  position: relative;
+}
+main .digitalproducts .container .container_content .product_image img {
   width: 100%;
   height: 100%;
+}
+main .digitalproducts .container .container_content .product_about {
+  color: black;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+}
+main .digitalproducts .container .container_content .product_about h5 {
+  color: #ef6d58;
+  letter-spacing: 3px;
+  line-height: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main .digitalproducts .container .container_content .product_about h2 {
+  font-size: 56px;
+  max-width: 422px;
+  width: 100%;
+  font-weight: 800;
+  color: #391400;
+  margin-bottom: 26px;
+}
+main .digitalproducts .container .container_content .product_about span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 18px;
+}
+main .digitalproducts .container .container_content .product_about .imgbox {
+  display: flex;
+  margin-bottom: 36px;
+}
+main .digitalproducts .container .container_content .product_about .imgbox img {
+  width: 47px;
+  height: 48px;
+}
+main .digitalproducts .container .container_content .product_about .imgbox div {
+  margin-left: 28px;
+}
+main .digitalproducts .container .container_content .product_about .imgbox div p {
+  max-width: 386px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(57, 20, 0, 0.64);
+}
+main .digitalproducts .container .container_content .product_about .imgbox div span {
+  max-width: 126px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
+}
+main .digitalproducts .container .container_content .product_about button {
+  background: #ffffff;
+  width: 138px;
+  height: 48px;
+  border: none;
+  box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+  border-radius: 6px;
+}
+main .howagency {
+  background-color: rgb(253, 240, 233);
+  padding-bottom: 128px;
+}
+main .howagency .container .container_content {
+  display: flex;
+  flex-direction: column;
+}
+main .howagency .container .container_content .top {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+main .howagency .container .container_content .top p {
+  max-width: 78px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ef6d58;
+  margin-bottom: 17px;
+}
+main .howagency .container .container_content .top h2 {
+  max-width: 336px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 48px;
+  color: #391400;
+}
+main .howagency .container .container_content .bottom {
+  display: flex;
+}
+main .howagency .container .container_content .bottom div {
+  border: 1px solid #f3d1bf;
+  padding: 48px;
+}
+main .howagency .container .container_content .bottom div .imgbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ef6c57;
+  margin-bottom: 41px;
+}
+main .howagency .container .container_content .bottom div h3 {
+  max-width: 83px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #391400;
+  margin-bottom: 19px;
+}
+main .howagency .container .container_content .bottom div span {
+  max-width: 294px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(57, 20, 0, 0.64);
+  margin-bottom: 26px;
+}
+main .howagency .container .container_content .bottom div h5 {
+  max-width: 89px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #391400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -277,5 +780,82 @@ main .experience .container .container_content .experience_image div img {
     gap: 15px;
     align-items: center;
     justify-content: space-around;
+  }
+  main .experience .container .container_content {
+    flex-direction: column;
+  }
+  main .experience .container .container_content .experience_image {
+    width: 100%;
+  }
+  main .experience .container .container_content .experience_image div {
+    max-width: 127;
+    max-height: 127;
+  }
+  main .experience .container .container_content .experience_about {
+    width: 100%;
+  }
+  main .experience .container .container_content .experience_about h2 {
+    font-size: 40px;
+  }
+  main .percent .container .percent_content {
+    flex-direction: column;
+  }
+  main .percent .container .percent_content .box {
+    max-width: 100%;
+  }
+  main .making_projects .container .container_content {
+    flex-direction: column;
+  }
+  main .making_projects .container .container_content div {
+    width: 100%;
+  }
+  main .making_projects .container .container_content .leftbox {
+    margin-bottom: 72px;
+  }
+  main .videorell .container .container_content {
+    flex-direction: column;
+  }
+  main .videorell .container .container_content div {
+    width: 100%;
+  }
+  main .videorell .container .container_content .videobox {
+    max-width: 329px;
+    max-height: 212px;
+    margin-bottom: 24px;
+  }
+  main .videorell .container .container_content .textbox span {
+    font-size: 35px;
+  }
+  main .sitelook .container .container_content {
+    flex-direction: column;
+  }
+  main .sitelook .container .container_content div {
+    width: 100%;
+  }
+  main .sitelook .container .container_content .textbox h2 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  main .longrun .container .container_content {
+    flex-direction: column;
+  }
+  main .longrun .container .container_content .leftbox {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .longrun .container .container_content .leftbox div {
+    width: 100%;
+  }
+  main .digitalproducts .container .container_content {
+    flex-direction: column;
+  }
+  main .digitalproducts .container .container_content .product_image {
+    width: 100%;
+  }
+  main .digitalproducts .container .container_content .product_about {
+    width: 100%;
+  }
+  main .howagency .container .container_content .bottom {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */
