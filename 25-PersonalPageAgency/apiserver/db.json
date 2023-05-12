@@ -1,0 +1,32 @@
+[
+  {
+    "name": ["Cristiano Ronaldo"],
+    "country": ["Madeira"],
+    "img": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Cristiano_Ronaldo_WC2022_-_01.jpg"
+    ],
+    "about": [
+      "Profesyonel olmadan önce Andorinha, CD Nacional ve son olarak Sporting CP genç takımında oynayan Ronaldo, 17 yaş altı Portekiz millî takımında da dikkat çekmişti. "
+    ]
+  },
+  {
+    "name": ["Lionel Messi"],
+    "country": ["Arjantin"],
+    "img": [
+      "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg"
+    ],
+    "about": [
+      "Messi, Arjantin millî takımı için en çok maça çıkan ve en çok gol atan oyuncu konumundadır. 2005 FIFA 20 Yaş Altı Dünya Kupası'nda şampiyonluk yaşadı; "
+    ]
+  },
+  {
+    "name": ["Kylian Mbappé"],
+    "country": ["Fransa"],
+    "img": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg/540px-2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg"
+    ],
+    "about": [
+      "Futbola babası Wilfried Mbappé'nin hocalığında AS Bondy'de başladı. Daha sonra Clairefontaine futbol akademisine girdi. Burada genç takım adına maça çıktı. "
+    ]
+  }
+]
