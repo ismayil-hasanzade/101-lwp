@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu cf">
+        <li>
+          <a href="index.html">Pages</a>
+          <ul class="submenu">
+            <li>
+              <a href="index.html">Table Page</a>
+            </li>
+            <li>
+              <a href="./postpage.html">Post Page</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="form">
+        <form action="">
+          <div class="title">Xoş Gəlmisiz</div>
+          <div class="subtitle">Zəhmət olmazsa məlumatları tam doldurun</div>
+          <div class="input-container ic1">
+            <input
+              required
+              pattern="[^\d\s]+"
+              id="CompanyName"
+              class="input"
+              type="text"
+              placeholder=" "
+            />
+            <div class="cut"></div>
+            <label for="CompanyName" class="placeholder">CompanyName</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              required
+              pattern="[^\d\s]+"
+              id="ContactName"
+              class="input"
+              type="text"
+              placeholder=" "
+            />
+            <div class="cut"></div>
+            <label for="ContactName" class="placeholder">ContactName</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              required
+              id="City"
+              class="input"
+              maxlength="7"
+              type="text"
+              placeholder=" "
+            />
+            <div class="cut"></div>
+            <label for="City" class="placeholder">City</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              required
+              id="Country"
+              class="input"
+              maxlength="7"
+              type="text"
+              placeholder=" "
+            />
+            <div class="cut"></div>
+            <label for="Country" class="placeholder">Country</label>
+          </div>
+          <div class="input-container ic2">
+            <input
+              required
+              id="Phone"
+              class="input"
+              pattern="\d*"
+              type="text"
+              placeholder=" "
+            />
+            <div class="cut"></div>
+            <label for="Phone" class="placeholder">Phone</label>
+          </div>
+
+          <button type="text" class="submit">Göndər</button>
+        </form>
+      </div>
+    </section>
+    <script src="./assets/script/postpage.js"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+* {
+  font-family: "Epilogue";
+}
+
+a {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000;
+}
+
+nav {
+  padding-bottom: 50px;
+}
+nav .cf:before,
+nav .cf:after {
+  content: " ";
+  display: table;
+}
+nav .cf:after {
+  clear: both;
+}
+nav .cf {
+  *zoom: 1;
+}
+nav .menu,
+nav .submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav .menu {
+  margin: 50px auto;
+  width: 800px;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+nav .menu > li {
+  background: #000;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+}
+nav .menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica;
+  font-size: 14px;
+}
+nav .menu li:hover {
+  background: #e74c3c;
+}
+nav .menu > li > a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+nav .submenu {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  transform: skewX(-25deg);
+  transform-origin: left top;
+}
+nav .submenu li {
+  background-color: #34495e;
+  position: relative;
+  overflow: hidden;
+}
+nav .submenu > li > a {
+  padding: 1em 2em;
+}
+nav .submenu > li::after {
+  content: "";
+  position: absolute;
+  top: -125%;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.9);
+}
+nav .submenu > li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(0);
+}
+nav .submenu > li:nth-child(odd) > a {
+  transform: skewX(25deg);
+}
+nav .submenu > li:nth-child(odd)::after {
+  right: -50%;
+  transform: skewX(-25deg) rotate(3deg);
+}
+nav .submenu > li:nth-child(even) {
+  transform: skewX(25deg) translateX(0);
+}
+nav .submenu > li:nth-child(even) > a {
+  transform: skewX(-25deg);
+}
+nav .submenu > li:nth-child(even)::after {
+  left: -50%;
+  transform: skewX(25deg) rotate(3deg);
+}
+nav .submenu,
+nav .submenu li {
+  opacity: 0;
+  visibility: hidden;
+}
+nav .submenu li {
+  transition: 0.2s ease transform;
+}
+nav .menu > li:hover .submenu,
+nav .menu > li:hover .submenu li {
+  opacity: 1;
+  visibility: visible;
+}
+nav .menu > li:hover .submenu li:nth-child(even) {
+  transform: skewX(25deg) translateX(15px);
+}
+nav .menu > li:hover .submenu li:nth-child(odd) {
+  transform: skewX(-25deg) translateX(-15px);
+}
+
+body {
+  background-color: #000;
+}
+
+section {
+  align-items: center;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  flex-direction: column;
+}
+
+.form {
+  background-color: #15172b;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 320px;
+}
+
+.title {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.subtitle {
+  color: #eee;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.ic1 {
+  margin-top: 40px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: #303245;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+.input:focus ~ .cut {
+  transform: translateY(8px);
+}
+.input:focus ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+  color: #dc2f55;
+}
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+  color: #808097;
+}
+
+.cut {
+  background-color: #15172b;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.placeholder {
+  color: #65657b;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  text-align: center;
+  width: 100%;
+}
+.submit:active {
+  background-color: #06b;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,133 @@
+$color_1: #eee;
+$color_2: #65657b;
+$color_3: #808097;
+$color_4: #dc2f55;
+$font-family_1: sans-serif;
+$background-color_1: #000;
+$background-color_2: #15172b;
+$background-color_3: #303245;
+$background-color_4: #08d;
+$background-color_5: #06b;
+
+body {
+  background-color: #000;
+}
+section {
+  align-items: center;
+  background-color: $background-color_1;
+  display: flex;
+  justify-content: center;
+  
+  padding-bottom: 100px;
+
+  flex-direction: column;
+}
+.form {
+  background-color: $background-color_2;
+  border-radius: 20px;
+  box-sizing: border-box;
+
+  padding: 20px;
+  width: 320px;
+}
+.title {
+  color: $color_1;
+  font-family: $font-family_1;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.subtitle {
+  color: $color_1;
+  font-family: $font-family_1;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.input-container {
+  height: 50px;
+  position: relative;
+  width: 100%;
+}
+.ic1 {
+  margin-top: 40px;
+}
+.ic2 {
+  margin-top: 30px;
+}
+.input {
+  background-color: $background-color_3;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: $color_1;
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+  &:focus {
+    ~ {
+      .cut {
+        transform: translateY(8px);
+      }
+      .placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+        color: $color_4;
+      }
+    }
+  }
+  &:not(:placeholder-shown) {
+    ~ {
+      .cut {
+        transform: translateY(8px);
+      }
+      .placeholder {
+        transform: translateY(-30px) translateX(10px) scale(0.75);
+        color: $color_3;
+      }
+    }
+  }
+}
+.cut {
+  background-color: $background-color_2;
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+.cut-short {
+  width: 50px;
+}
+.placeholder {
+  color: $color_2;
+  font-family: $font-family_1;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  position: absolute;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+.submit {
+  background-color: $background-color_4;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: $color_1;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  // outline: 0;
+  text-align: center;
+  width: 100%;
+  &:active {
+    background-color: $background-color_5;
+  }
+}
